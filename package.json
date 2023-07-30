@@ -1,0 +1,19 @@
+{
+  "name": "milspoon-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/scripts/index.js",
+  "scripts": {
+    "test": "standard && node my-tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MILSPOON/milspoon-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MILSPOON/milspoon-front/issues"
+  },
+  "homepage": "https://github.com/MILSPOON/milspoon-front#readme"
+}
