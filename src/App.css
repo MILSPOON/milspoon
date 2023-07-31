@@ -29,6 +29,13 @@ nav{
   width: 100vw;
   height: 12.5%;
   background-color: aqua;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav>div{
+  width: 100%;
+  border: 1px solid black;
 }
 
 .mainContent>div{
