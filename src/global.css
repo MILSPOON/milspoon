@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 h1{
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
+
+nav{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+p{font-size: 1.4rem;}
