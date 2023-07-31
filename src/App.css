@@ -8,12 +8,43 @@
   width: 100vw;
   height: 100vh;
 }
-.mainContent{
+.content{
   position: absolute;
   bottom: 0%;
   width: 100vw;
   height: 70vh;
+}
+
+.mainContent{
   background-color: white;
   border-radius: 5% 5% 0 0;
-  padding: 2.5%;
+  padding: 8% 2.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3%;
+  height: 87.5%;
+}
+
+nav{
+  width: 100vw;
+  height: 12.5%;
+  background-color: aqua;
+}
+
+.mainContent>div{
+  width: 100%;
+  background-color: rgb(81, 225, 225);
+  border-radius: 50px;
+  padding: 2%;
+}
+
+.mainContent>div:hover{
+  filter: brightness(70%);
+}
+
+.todayQuiz{
+  height: 40%;
+}
+.quiz{
+  height: 50%;
 }

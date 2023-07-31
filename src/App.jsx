@@ -12,9 +12,22 @@ function App () {
 
   return (
     <div className="App">
-      <div className="mainContent">
-        <h1>테스트</h1>
-        <p>테스트</p>
+      <div className="content">
+        <div className="mainContent">
+          <div className="todayQuiz">
+            <h1>오늘의 퀴즈!</h1>
+          </div>
+          <div className="quiz">
+            <h1>전체 퀴즈!</h1>
+          </div>
+        </div>
+        <nav>
+          <div>사전</div>
+          <div>대피소</div>
+          <div>퀴즈</div>
+          <div>테스트</div>
+          <div>내정보</div>
+        </nav>
       </div>
     </div>
   )
