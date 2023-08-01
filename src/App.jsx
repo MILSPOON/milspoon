@@ -2,6 +2,7 @@ import './App.css'
 import './global.css'
 import { useState, useEffect } from 'react'
 import Modal from './components/Modal'
+import { Router } from 'react-router-dom'
 function App () {
   // const apiUrl = 'https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=1&perPage=2000&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D'
 
@@ -11,6 +12,10 @@ function App () {
   //     console.log(myJson)
   //   })
   const [currentEventName, setCurrentEventName] = useState('미지정')
+
+  function moveDictionary () {
+    Router.push('./Pages/Dictionaary')
+  }
 
   function clickMode (e) {
     const modeName = e.target.textContent
@@ -33,7 +38,7 @@ function App () {
           </div>
         </div>
         <nav>
-          <div>사전</div>
+          <div onClick={moveDictionary}>사전</div>
           <div>대피소</div>
           <div>퀴즈</div>
           <div>테스트</div>
