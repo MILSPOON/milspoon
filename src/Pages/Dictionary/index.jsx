@@ -1,7 +1,7 @@
 import './style.css'
 
 function Dictionary () {
-  return(
+  return (
         <div>
             <div className="menubar">
                 <p>용어 사전</p>
