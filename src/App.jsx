@@ -2,17 +2,20 @@ import './App.css'
 import './global.css'
 import { useState, useEffect } from 'react'
 import Modal from './components/Modal'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import chartIcon from './media/3dChartIcon.png'
 import CountDown from './components/CountDown'
-function App () {
-  // const apiUrl = 'https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=1&perPage=2000&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D'
 
-  // fetch(apiUrl)
-  //   .then(res => res.json())
-  //   .then(myJson => {
-  //     console.log(myJson)
-  //   })
+function App () {
+  const apiUrl = 'https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=1&perPage=2000&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D'
+
+  fetch(apiUrl)
+    .then(res => res.json())
+    .then(myJson => {
+      console.log(myJson)
+    })
+  const movePage = useNavigate()
+
   const [currentEventName, setCurrentEventName] = useState('미지정')
 
   function clickMode (e) {
@@ -23,13 +26,22 @@ function App () {
     console.log(currentEventName)
   }, [currentEventName])
 
-  const [isBool, setBool] = useState(false)
+  const [isGameStart, setGameStart] = useState(false)
+
+  useEffect(() => {
+    if (isGameStart) {
+      setTimeout(() => {
+        movePage('/quiz')
+      }, 3950)
+    }
+  }, [isGameStart])
+
   return (
     <div className="App">
-      { isBool && <CountDown/> }
-      <Modal modeName={currentEventName} setModeName={setCurrentEventName} setBool={setBool}></Modal>
+      { isGameStart && <CountDown/> }
+      <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className='infoBox'>
-        <img src={chartIcon} width='250' className='chart'/>
+        <img src={chartIcon} width='400' className='chart'/>
       </div>
       <div className="content">
         <div className="mainContent">

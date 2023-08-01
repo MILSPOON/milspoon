@@ -3,7 +3,7 @@ import './style.css'
 function modal (props) {
   function btnClick (e) {
     if (e.target.textContent === '확인') {
-      props.setBool(true)
+      props.setGameStart(true)
     }
     props.setModeName('미지정')
   }

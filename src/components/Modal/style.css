@@ -30,13 +30,14 @@
   position: absolute;
   width: 94%;
   bottom: 12.5%;
+  font-size: 5rem;
 }
 
 .YesBtn{
   background-color: #84fd79;
 }
 
-button{
+.YesBtn, .NoBtn{
   border: 1px solid #333333;
   border-radius: 10px;
   width: 40%;
