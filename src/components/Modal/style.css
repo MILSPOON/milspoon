@@ -7,8 +7,13 @@
   text-align: center;
   width: 90vw;
   height: 20%;
-  background-color: aquamarine;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
   padding: 3%;
+}
+.modal>p{
+  padding-top: 6px;
 }
 .bg{
   position: relative;
@@ -17,4 +22,22 @@
   width: 100vw;
   height: 100vh;
   display: none;
+}
+
+.btnBox{
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 94%;
+  bottom: 12.5%;
+}
+
+.YesBtn{
+  background-color: #84fd79;
+}
+
+button{
+  border: 1px solid #333333;
+  padding: 4% 15%;
+  border-radius: 10px;
 }
