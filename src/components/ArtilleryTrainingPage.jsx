@@ -1,10 +1,11 @@
-import './global.css'
+import '../global.css'
 
 function ArtilleryTrainingPage () {
-  console.log('11')
+  const iframePart = { __html: '<iframe src="" width="200px" height="400px"></iframe>' }
+
   return (
-        <h1>test</h1>
+    <div dangerouslySetInnerHTML={iframePart}></div>
   )
 }
 
-export default ArtilleryTrainingPage
+export { ArtilleryTrainingPage }
