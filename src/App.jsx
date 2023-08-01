@@ -36,7 +36,7 @@ function App () {
           <Link to={'/dictionary'}>사전</Link>
           <Link to={'/dictionary'}>대피소</Link>
           <Link to={'/dictionary'}>퀴즈</Link>
-          <Link to={'/dictionary'}>테스트</Link>
+          <Link to={'/artilleryTraining'}>포병</Link>
           <Link to={'/dictionary'}>내정보</Link>
         </nav>
       </div>
