@@ -35,9 +35,14 @@ nav{
   justify-content: space-evenly;
 }
 
-nav>link{
-  width: 100%;
+nav>a{
+  display: block;
   border: 1px solid black;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .mainContent>div{
@@ -53,12 +58,16 @@ nav>link{
 
 .todayQuiz{
   height: 40%;
+  background: url(./media/Shoot-wall.png) center/cover;
+  filter: brightness(80%);
 }
 .todayQuiz>h1{
-  padding: 10px 14px;
+  color: white;
 }
 .quiz{
   height: 60%;
+  background: url(./media/Shoot-wall.png) center/cover;
+  filter: brightness(80%);
 }
 .quiz>h1{
   padding: 10px 14px;
