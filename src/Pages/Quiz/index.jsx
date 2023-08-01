@@ -36,20 +36,40 @@ function Quiz () {
   api()
 
   console.log(realAnswer)
+
+  function answerCheck (e) {
+    if (e.target.textContent === realAnswer) {
+      console.log('정답')
+    } else {
+      console.log('오답')
+    }
+  }
   return (
     <div className='quizSite'>
       <div className="timer">
-
+        <input type="" />
       </div>
       <div className="questionContent">
         <h3 className='question'>{question}</h3>
       </div>
       <div className="quizContent">
-        <button className="answerBtn">{answerNum[0]}</button>
-        <button className="answerBtn">{answerNum[1]}</button>
-        <button className="answerBtn">{answerNum[2]}</button>
-        <button className="answerBtn">{answerNum[3]}</button>
+        <button className="answerBtn" onClick={answerCheck}>{answerNum[0]}</button>
+        <button className="answerBtn" onClick={answerCheck}>{answerNum[1]}</button>
+        <button className="answerBtn" onClick={answerCheck}>{answerNum[2]}</button>
+        <button className="answerBtn" onClick={answerCheck}>{answerNum[3]}</button>
       </div>
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </div>
   )
 }
