@@ -1,7 +1,7 @@
-import "./style.css"
+import './style.css'
 
 function Dictionary () {
-    return(
+  return(
         <div>
             <div className="menubar">
                 <p>용어 사전</p>
@@ -11,7 +11,7 @@ function Dictionary () {
                 </ul>
             </div>
         </div>
-    )
+  )
 }
 
 export default Dictionary
