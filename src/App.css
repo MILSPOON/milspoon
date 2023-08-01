@@ -33,7 +33,7 @@ nav{
   justify-content: space-evenly;
 }
 
-nav>div{
+nav>link{
   width: 100%;
   border: 1px solid black;
 }
