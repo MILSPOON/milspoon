@@ -1,9 +1,9 @@
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   text-align: center;
   width: 90vw;
   height: 20%;
@@ -12,7 +12,8 @@
   border-radius: 20px;
   padding: 3%;
 }
-.modal>p{
+
+.modal>p {
   padding-top: 6px;
 }
 .bg{
@@ -26,7 +27,7 @@
   display: none;
 }
 
-.btnBox{
+.btnBox {
   display: flex;
   justify-content: space-evenly;
   position: absolute;
@@ -35,20 +36,22 @@
   font-size: 2.5rem;
 }
 
-.YesBtn{
+.YesBtn {
   background-color: #84fd79;
 }
 
-.YesBtn, .NoBtn{
+.YesBtn,
+.NoBtn {
   border: 1px solid #333333;
   border-radius: 10px;
   width: 40%;
   height: 30%;
 }
 
-a{
+/* 
+a {
   display: block;
   width: 100%;
   height: 100%;
   padding: 4% 15%;
-}
+} */
