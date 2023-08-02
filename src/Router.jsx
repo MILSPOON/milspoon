@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dictionary from './Pages/Dictionary'
+import DictionaryDetail from './Pages/DictionaryDetail'
 import Quiz from './Pages/Quiz'
 import App from './App'
 function Router () {
@@ -7,6 +8,7 @@ function Router () {
     <BrowserRouter>
       <Routes>
         <Route path='/dictionary' element={<Dictionary/>}></Route>
+        <Route path='/dictionary/detail' element={<DictionaryDetail/>}></Route>
         <Route path='/quiz' element={<Quiz/>}></Route>
         <Route path='/' element={<App/>}></Route>
       </Routes>

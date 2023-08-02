@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menubar {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #abff4f;
+    font-weight: bold;
+    display: flex;
+    color: #333;
+    position: sticky;
+    top: 0;
+}
+
+.menubar>p {
+    margin-left: 5%;
+}
+
+.dictionary_list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+}
+
+.dictionary_list_item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 4px #d0d0d0;
+    padding: 0.25rem;
+}
+
+.dictionary_info {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.dictionary_info>.number {
+    flex-shrink: 0;
+    font-weight: bold;
+}
+
+.dictionary_categories {
+    display: flex;
+    font-size: 0.75rem;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+.dictionary_category {
+    border-radius: 2px;
+    padding: 2px;
+    background-color: #f5f5f5;
+    border: 1px solid #f0f0f0;
+}
