@@ -49,15 +49,15 @@ function Quiz () {
         setQuestion(myJson.data[randomNum].설명)
         setRealAnswer(myJson.data[randomNum].표제어)
 
-        console.log(randomNum)
+        const realAnswerTemp = myJson.data[randomNum].표제어
         const newAnswerNum = [...answerNum]
         for (let i = 0; i < 4; i++) {
+          randomNum = Math.round(Math.random() * Object.keys(myJson.data).length)
           if (realAnswerNum === i) {
-            newAnswerNum[i] = myJson.data[randomNum].표제어
+            newAnswerNum[i] = realAnswerTemp
           } else {
             newAnswerNum[i] = myJson.data[randomNum].표제어
           }
-          randomNum = Math.round(Math.random() * Object.keys(myJson.data).length)
         }
         console.log(myJson.data[realAnswerNum].표제어)
         setAnswerNum(newAnswerNum)
