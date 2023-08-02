@@ -9,18 +9,29 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 7vh;
     text-align: center;
     line-height: 50px;
-    background-color: #333;
+    background-color: #1D1D1D;
     font-weight: bold;
-    color: #fff;
-    position: sticky;
-    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
 }
 
-.menubar>p {
+.menubar>svg {
     margin-left: 5%;
+    height: 30%;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 2.5%;
 }
 
 .dictionary_list {
@@ -72,14 +83,18 @@ hr {
 }
 
 .word_classification {
-    font-size: 20px;
-    margin: 100px 0;
+    font-size: 18px;
+    margin: 30px 12px;
 }
 
 .word_explane {
-    margin: 100px 0;
+    font-size: 17px;
+    margin: 30px 0;
+    text-align: justify;
+    padding: 12px;
 }
 
 .word_whence {
-    margin: 100px 0;
+    margin: 30px 12px;
+    text-align: right;
 }

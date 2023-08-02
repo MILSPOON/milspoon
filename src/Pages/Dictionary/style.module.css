@@ -6,23 +6,34 @@
 }
 
 .menubar {
+    width: 100%;
     margin: 0;
     padding: 0;
-    height: 50px;
+    height: 7vh;
     text-align: center;
     line-height: 50px;
     background-color: #1D1D1D;
     font-weight: bold;
     display: flex;
-    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
     position: sticky;
     top: 0;
-    border: 1.5px outset lawngreen;
 }
 
-.menubar>p {
+.menubar>svg {
     margin-left: 5%;
+    height: 30%;
+}
 
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 2.5%;
 }
 
 .dictionary_list {
@@ -33,22 +44,31 @@
 }
 
 .dictionary_list_item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
     border-radius: 0.25rem;
     box-shadow: 0 0 4px #d0d0d0;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
 }
 
 .dictionary_info {
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
 
-.dictionary_info>.number {
-    flex-shrink: 0;
+.dictionary_entry {
     font-weight: bold;
+}
+
+.dictionary_info>.number {
+    min-width: 1.75rem;
+    text-align: center;
+    height: auto;
+    font-weight: bold;
+    background-color: #fafafa;
+    border: 1px solid #eaeaea;
+    padding: 0 0.25rem;
+    border-radius: 0.25rem;
+
 }
 
 .dictionary_categories {
@@ -63,4 +83,10 @@
     padding: 2px;
     background-color: #f5f5f5;
     border: 1px solid #f0f0f0;
+}
+
+.loadButton {
+    padding: auto;
+    box-shadow: 0px 0px 4px #d0d0d0;
+    border-radius: 5px;
 }
