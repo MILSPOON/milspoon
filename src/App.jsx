@@ -41,7 +41,7 @@ function App () {
       { isGameStart && <CountDown/> }
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className='infoBox'>
-        <img src={chartIcon} width='400' className='chart'/>
+        <img src={chartIcon} width='150' className='chart'/>
       </div>
       <div className="content">
         <div className="mainContent">
