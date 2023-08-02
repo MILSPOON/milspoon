@@ -11,16 +11,18 @@
     height: 50px;
     text-align: center;
     line-height: 50px;
-    background-color: #abff4f;
+    background-color: #1D1D1D;
     font-weight: bold;
     display: flex;
-    color: #333;
+    color: #fff;
     position: sticky;
     top: 0;
+    border: 1.5px outset lawngreen;
 }
 
 .menubar>p {
     margin-left: 5%;
+
 }
 
 .dictionary_list {
