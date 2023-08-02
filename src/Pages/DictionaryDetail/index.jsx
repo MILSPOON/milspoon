@@ -18,14 +18,10 @@ function Dictionary () {
       <div className="menubar">
         <p>용어 상세</p>
       </div>
-      <div>
-      {detailData?.분류}
-{detailData?.설명}
-{detailData?.순번}
-{detailData?.영문}
-{detailData?.출처}
-{detailData?.출처1}
-{detailData?.표제어}
+      <div className='dictionary_word'>
+        <div className='word_classification'>분류:{detailData?.분류}</div>
+        <div className='word_explane'>설명:{detailData?.설명}</div>
+        <div className='word_whence'>출처:{detailData?.출처}, {detailData?.출처1}</div>
       </div>
     </div>
     )
