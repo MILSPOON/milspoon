@@ -34,11 +34,18 @@ function Dictionary () {
       <div className="circle"></div>
       </div>
       <div className='dictionary_word'>
-        <div className='word_classification'>분류:{detailData?.분류}</div>
+        <div className='word_classification'>
+          <h3 className='subheading'>분류</h3>
+          {detailData?.분류}</div>
         <hr />
-        <div className='word_explane'>설명:{detailData?.설명}</div>
+        <div className='word_explane'>
+          <h3 className='subheading'>설명</h3>
+          {detailData?.설명}
+          </div>
         <hr />
-        <div className='word_whence'>출처:{detailData?.출처}, {detailData?.출처1}</div>
+        <div className='word_whence'>
+          <h3 className='subheading'>출처</h3>
+          {detailData?.출처}, {detailData?.출처1}</div>
         <hr />
       </div>
     </div>
