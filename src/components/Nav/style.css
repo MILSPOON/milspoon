@@ -20,7 +20,7 @@ nav > .navBtn{
     gap: 6px;
     flex: 1 0 0;
     align-self: stretch;
-    color: #D0FF00;
+    color: #b7b7b7;
     text-align: center;
     font-size: min(2.8vw, 10px);
     font-style: normal;
@@ -29,6 +29,6 @@ nav > .navBtn{
     letter-spacing: 0.2px;
 }
 
-nav > .navBtn > .navIcon {
+.navIcon {
     font-size: min(5vw, 20px);
 }

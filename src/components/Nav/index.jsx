@@ -1,8 +1,7 @@
-/* eslint-disable import/no-duplicates */
+/* eslint-disable no-unused-vars */
 import './style.css'
-import { Link } from 'react-router-dom'
+import { NavLink, isActive } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// eslint-disable-next-line no-unused-vars
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
@@ -19,31 +18,37 @@ library.add(faBook,
   faPersonRays,
   faUser)
 
+const activeStyle = {
+  color: '#D0FF00'
+}
+const notActiveStyle = {
+  color: '#b7b7b7'
+}
 function Nav () {
   return (
     <div className="nav">
       <div className="nav">
         <nav>
-          <Link to={'/dictionary'} href="/" className="navBtn">
-            <FontAwesomeIcon className='navIcon' icon={faBook} style={{ color: '#b7b7b7' }} />
+          <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+            <FontAwesomeIcon className='navIcon' icon={faBook}/>
             사전
-          </Link>
-          <Link to={'/dictionary'} href="/" className="navBtn">
-            <FontAwesomeIcon className='navIcon' icon={faPersonRunning} style={{ color: '#b7b7b7' }} />
+          </NavLink>
+          <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+            <FontAwesomeIcon className='navIcon' icon={faPersonRunning} />
             대피소
-          </Link>
-          <Link to={'/'} href="/" className="navBtn">
-            <FontAwesomeIcon className='navIcon' icon={faQuestion} style={{ color: '#b7b7b7' }} />
+          </NavLink>
+          <NavLink to={'/'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+            <FontAwesomeIcon className='navIcon' icon={faQuestion} />
             퀴즈
-          </Link>
-          <Link to={'/artillery'} href="https://artillery-signal-msa.vercel.app/" className="navBtn">
-            <FontAwesomeIcon className='navIcon' icon={faPersonRays} style={{ color: '#b7b7b7' }} />
+          </NavLink>
+          <NavLink to={'/artillery'} href="https://artillery-signal-msa.vercel.app/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+            <FontAwesomeIcon className='navIcon' icon={faPersonRays} />
             포병
-          </Link>
-          <Link to={'/dictionary'} href="/" className="navBtn">
-            <FontAwesomeIcon className='navIcon' icon={faUser} style={{ color: '#b7b7b7' }} />
+          </NavLink>
+          <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+            <FontAwesomeIcon className='navIcon' icon={faUser} />
             내정보
-          </Link>
+          </NavLink>
         </nav>
 </div>
     </div>
