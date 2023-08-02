@@ -16,7 +16,8 @@
 .content{
   position: relative;
   width: 100vw;
-  height: 60vh;
+  height: 53vh;
+  /* 60 => 53 */
   /* z-index: 1000; */
 }
 
