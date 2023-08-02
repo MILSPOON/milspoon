@@ -40,8 +40,8 @@ function App () {
 
   return (
     <div className="App">
-      <MilHeader></MilHeader>
       { isGameStart && <CountDown/> }
+      <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className='infoBox'>
         <img src={chartIcon} width='150' className='chart'/>
