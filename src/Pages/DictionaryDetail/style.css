@@ -69,3 +69,8 @@ hr {
     margin: 30px 12px;
     text-align: right;
 }
+
+.subheading {
+    font-weight: bold;
+    margin-bottom: 5px;
+}

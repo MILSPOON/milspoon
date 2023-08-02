@@ -92,6 +92,7 @@ function Dictionary () {
         </ul>
         <Nav/>
     </div>
+
   )
 }
 
