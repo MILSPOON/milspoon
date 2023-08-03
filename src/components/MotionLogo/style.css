@@ -1,0 +1,21 @@
+
+.motionLogo{
+    background-color: black;
+    width: 60vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 100%
+}
+
+
+.ml2{
+    color: #fff;
+    font-size: 6vw;
+}
+
