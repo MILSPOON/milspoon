@@ -26,8 +26,6 @@ const notActiveStyle = {
 }
 function Nav () {
   return (
-    <div className="nav">
-      <div className="nav">
         <nav>
           <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
             <FontAwesomeIcon className='navIcon' icon={faBook}/>
@@ -50,8 +48,6 @@ function Nav () {
             내정보
           </NavLink>
         </nav>
-</div>
-    </div>
   )
 }
 
