@@ -59,13 +59,15 @@ const Account = () => {
   if (response === []) return <div>로딩중입니다.</div>
 
   return (
-      <div>
+      <div className='loginWrap'>
         <MilHeader></MilHeader>
         <MotionLogo text="떠 먹여주는 국방지식"></MotionLogo>
         <div className='bottomCtn'>
-          <input type='text' name='userId' value={user.userId} onChange={onChange}/>
-          <input type='text' name='userPw' value={user.userPw} onChange={onChange}/>
-          <button onClick={onClick}>로그인</button>
+          <div className="verBar"></div>
+          <p>로그인</p>
+          <input className="idInput" type='text' name='userId' value={user.userId} onChange={onChange} placeholder='아이디_'/>
+          <input className="psInput" type='text' name='userPw' value={user.userPw} onChange={onChange}placeholder='비밀번호_' />
+          <button className='loginBtn' onClick={onClick}>로그인</button>
         </div>
         <Nav></Nav>
       </div>
