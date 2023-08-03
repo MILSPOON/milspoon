@@ -2,7 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Dictionary from './Pages/Dictionary'
 import DictionaryDetail from './Pages/DictionaryDetail'
 import Quiz from './Pages/Quiz'
+import Artillery from './Pages/Artillery'
 import App from './App'
+
 function Router () {
   return (
     <BrowserRouter>
@@ -10,6 +12,7 @@ function Router () {
         <Route path='/dictionary' element={<Dictionary/>}></Route>
         <Route path='/dictionary/detail' element={<DictionaryDetail/>}></Route>
         <Route path='/quiz' element={<Quiz/>}></Route>
+        <Route path='/artillery' element={<Artillery/>}></Route>
         <Route path='/' element={<App/>}></Route>
       </Routes>
     </BrowserRouter>

@@ -1,8 +1,10 @@
 import './App.css'
 import './global.css'
+import Nav from './components/Nav'
+import MilHeader from './components/MilHeader'
 import { useState, useEffect } from 'react'
 import Modal from './components/Modal'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import chartIcon from './media/3dChartIcon.png'
 import CountDown from './components/CountDown'
 
@@ -39,6 +41,7 @@ function App () {
   return (
     <div className="App">
       { isGameStart && <CountDown/> }
+      <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className='infoBox'>
         <img src={chartIcon} width='150' className='chart'/>
@@ -52,14 +55,8 @@ function App () {
             <h1>전체 퀴즈!</h1>
           </div>
         </div>
-        <nav>
-          <Link to={'/dictionary'}>사전</Link>
-          <Link to={'/dictionary'}>대피소</Link>
-          <Link to={'/dictionary'}>퀴즈</Link>
-          <Link to={'/artilleryTraining'}>포병</Link>
-          <Link to={'/dictionary'}>내정보</Link>
-        </nav>
       </div>
+      <Nav></Nav>
     </div>
   )
 }

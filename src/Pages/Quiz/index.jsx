@@ -34,6 +34,8 @@ function Quiz () {
     useInterval(() => {
       setTime(time - 0.1)
       setPercentTime(time / maxTime * 100)
+      console.log(time)
+      console.log(percentTime)
     }, 100)
   }
   async function api () {
@@ -46,13 +48,13 @@ function Quiz () {
         const realAnswerNum = Math.round(Math.random() * 3)
         setQuestion(myJson.data[randomNum].설명)
         setRealAnswer(myJson.data[randomNum].표제어)
-        const realAnswerRestore = randomNum
-        console.log(realAnswerNum)
+
+        const realAnswerTemp = myJson.data[randomNum].표제어
         const newAnswerNum = [...answerNum]
         for (let i = 0; i < 4; i++) {
           randomNum = Math.round(Math.random() * Object.keys(myJson.data).length)
           if (realAnswerNum === i) {
-            newAnswerNum[i] = myJson.data[realAnswerRestore].표제어
+            newAnswerNum[i] = realAnswerTemp
           } else {
             newAnswerNum[i] = myJson.data[randomNum].표제어
           }
