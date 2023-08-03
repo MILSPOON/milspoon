@@ -43,6 +43,9 @@ function App () {
       <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className="content">
+        <div className="rankingContent">
+          ranking
+        </div>
         <div className="mainContent">
           <div className="todayQuiz" onClick={clickMode}>
             <h1>오늘의 퀴즈!</h1>
