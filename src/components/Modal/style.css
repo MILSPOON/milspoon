@@ -37,7 +37,12 @@
 }
 
 .YesBtn {
-  background-color: #84fd79;
+  background-color: #D0FF00;
+}
+
+.NoBtn{
+  color: white;
+  background-color: #333333;
 }
 
 .YesBtn,
