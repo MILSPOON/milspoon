@@ -42,8 +42,6 @@ function App () {
       { isGameStart && <CountDown/> }
       <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
-      <div className='infoBox'>
-      </div>
       <div className="content">
         <div className="mainContent">
           <div className="todayQuiz" onClick={clickMode}>
