@@ -46,7 +46,27 @@ const ListItem = (props) => {
 function Dictionary () {
   const [list, setList] = useState(null)
 
+  const [word, setWord] = useState('')
+
   const [totalCount, setTotalCount] = useState(null)
+
+  const enterCallBack = (e) => {
+    if (e.key === 'Enter') {
+      // console.log(list)
+      const filteredList = list.filter(data => {
+        return data['표제어'] === word
+      })
+      // console.log(filteredList)
+      setList(filteredList)
+      // list.forEach(data => {
+      //   if (data['표제어'] === word) { setList(data['표제어']) }
+      // })
+    }
+  }
+
+  const changeWord = e => {
+    setWord(e.target.value)
+  }
 
   const loadMorePage = useCallback((pageNum) => {
     fetch(`https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=${pageNum}&perPage=100&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D`, {
@@ -74,6 +94,7 @@ function Dictionary () {
   return (
     <div>
         <MilHeader></MilHeader>
+        <input className={styles.SearchBar} value={word} type='text' placeholder='단어 찾기' onKeyDown={enterCallBack} onChange={changeWord}></input>
         <ul className={styles.dictionary_list}>
           {list?.map((item) => (
             <ListItem
@@ -91,6 +112,7 @@ function Dictionary () {
           ) }
         </ul>
         <Nav/>
+
     </div>
 
   )
