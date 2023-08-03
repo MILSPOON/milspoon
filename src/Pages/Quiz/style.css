@@ -32,6 +32,7 @@
   height: 50px;
   border-radius: 99999px;
   background-color: #ffffff;
+  overflow: hidden;
 }
 
 .fillRange{
@@ -58,7 +59,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10% 0 1% 0;
+  padding: 5% 0 10% 0;
   position: relative;
   z-index: 2000;
 }

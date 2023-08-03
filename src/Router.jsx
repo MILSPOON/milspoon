@@ -4,11 +4,13 @@ import DictionaryDetail from './Pages/DictionaryDetail'
 import Quiz from './Pages/Quiz'
 import Artillery from './Pages/Artillery'
 import App from './App'
+import QuizResult from './Pages/QuizResult'
 
 function Router () {
   return (
     <BrowserRouter>
       <Routes>
+      <Route path='/Quiz/Result' element={<QuizResult/>}></Route>
         <Route path='/dictionary' element={<Dictionary/>}></Route>
         <Route path='/dictionary/detail' element={<DictionaryDetail/>}></Route>
         <Route path='/quiz' element={<Quiz/>}></Route>
