@@ -1,0 +1,29 @@
+.menubar{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 7vh;
+    text-align: center;
+    line-height: 50px;
+    background-color: #1D1D1D;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+.menubar > img {
+    height: 30%;
+    margin-left: 5%;
+}
+
+.menubar > .circle {
+    aspect-ratio: 1/1;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100vh;
+    margin-right: 5%;
+}
