@@ -31,7 +31,7 @@ function Nav () {
             <FontAwesomeIcon className='navIcon' icon={faBook}/>
             사전
           </NavLink>
-          <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+          <NavLink to={'/wleh'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
             <FontAwesomeIcon className='navIcon' icon={faPersonRunning} />
             대피소
           </NavLink>
