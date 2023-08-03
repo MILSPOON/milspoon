@@ -7,6 +7,7 @@ import Quiz from './Pages/Quiz'
 import Artillery from './Pages/Artillery'
 import App from './App'
 import QuizResult from './Pages/QuizResult'
+import Wleh from './Pages/Wleh'
 
 function Router () {
   return (
@@ -19,6 +20,7 @@ function Router () {
         <Route path='/account/create' element={<AccountCreate/>}></Route>
         <Route path='/quiz' element={<Quiz/>}></Route>
         <Route path='/artillery' element={<Artillery/>}></Route>
+        <Route path='/wleh' element={<Wleh/>}></Route>
         <Route path='/' element={<App/>}></Route>
       </Routes>
     </BrowserRouter>
