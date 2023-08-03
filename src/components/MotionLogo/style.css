@@ -1,8 +1,8 @@
 
 .motionLogo{
     background-color: black;
-    width: 60vw;
-    height: 20vh;
+    width: 100vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,7 +10,7 @@
 }
 
 img{
-    width: 100%
+    width: 50%
 }
 
 
