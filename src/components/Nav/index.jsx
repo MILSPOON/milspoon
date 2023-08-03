@@ -45,7 +45,7 @@ function Nav () {
             <FontAwesomeIcon className='navIcon' icon={faPersonRays} />
             포병
           </NavLink>
-          <NavLink to={'/dictionary'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
+          <NavLink to={'/account'} href="/" className="navBtn" style={({ isActive }) => isActive ? activeStyle : notActiveStyle }>
             <FontAwesomeIcon className='navIcon' icon={faUser} />
             내정보
           </NavLink>
