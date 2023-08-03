@@ -109,22 +109,38 @@ Nav{
 .mainContent>div:hover{
   filter: brightness(70%);
 }
-
+.todayQuiz, .quiz{
+  overflow: hidden;
+}
+.mainContent>div>img{
+  position: relative;
+  width: 50%;
+}
+.todayQuiz>img{
+  top: -150%;
+  left: 55%;
+  transform: rotateZ(-15deg);
+}
+.quiz>img{
+  top: -75%;
+  left: 55%;
+  transform: rotateZ(-30deg);
+}
 .todayQuiz{
   height: 40%;
-  background: url(./media/Shoot-wall.png) center/cover;
-  filter: brightness(80%);
+  background-color: #1D1D1D;
 }
 .todayQuiz>h1{
+  padding: 10px 14px;
   color: white;
 }
 .quiz{
   height: 60%;
-  background: url(./media/Shoot-wall.png) center/cover;
-  filter: brightness(80%);
+  background-color: #1D1D1D;
 }
 .quiz>h1{
   padding: 10px 14px;
+  color: white;
 }
 
 .trophy{

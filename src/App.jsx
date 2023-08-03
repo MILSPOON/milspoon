@@ -7,14 +7,15 @@ import Modal from './components/Modal'
 import { useNavigate } from 'react-router-dom'
 import CountDown from './components/CountDown'
 import Trophy from './media/trophy-dynamic-premium.png'
-
+import Flag from './media/flag-dynamic-color.png'
+import Target from './media/target-dynamic-color.png'
 function App () {
   const movePage = useNavigate()
 
   const [currentEventName, setCurrentEventName] = useState('미지정')
 
   function clickMode (e) {
-    const modeName = e.target.textContent
+    const modeName = e.target.classList.contains('quiz') ? '전체 퀴즈' : '오늘의 퀴즈'
     setCurrentEventName(modeName)
   }
   useEffect(() => {
@@ -127,9 +128,11 @@ function App () {
         <div className="mainContent">
           <div className="todayQuiz" onClick={clickMode}>
             <h1>오늘의 퀴즈!</h1>
+          <img src={Target} className='target'/>
           </div>
           <div className="quiz" onClick={clickMode}>
             <h1>전체 퀴즈!</h1>
+            <img src={Flag} className='flag'/>
           </div>
         </div>
       </div>
