@@ -4,8 +4,9 @@ function modal (props) {
   function btnClick (e) {
     if (e.target.textContent === '확인') {
       props.setGameStart(true)
+    } else {
+      props.setModeName('미지정')
     }
-    props.setModeName('미지정')
   }
   return (
     <div className='bg' style={{ display: props.modeName === '미지정' ? 'none' : 'block' }}>
