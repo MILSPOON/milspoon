@@ -5,6 +5,7 @@ import MotionLogo from '../../components/MotionLogo'
 import MilHeader from '../../components/MilHeader'
 import Nav from '../../components/Nav'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 const Account = () => {
   // const [state] = useAsync(getData,[]);
@@ -68,6 +69,7 @@ const Account = () => {
           <input className="idInput" type='text' name='userId' value={user.userId} onChange={onChange} placeholder='아이디_'/>
           <input className="psInput" type='text' name='userPw' value={user.userPw} onChange={onChange}placeholder='비밀번호_' />
           <button className='loginBtn' onClick={onClick}>로그인</button>
+          <p className='accountAskText'>아직 계정이 없으신가요? <span><Link className='accountLinkText' to={'/account/create'}>계정 생성</Link></span></p>
         </div>
         <Nav></Nav>
       </div>

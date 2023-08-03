@@ -5,14 +5,15 @@ import './style.css'
 
 const AccountCreate = () => {
   return (
-    <div className='accountCreate'>
+    <div className='createWrap'>
       <MilHeader/>
       <MotionLogo></MotionLogo>
       <div className="accountCreate">
-        <h1>회원가입</h1>
-        <input type='text' name='userId' placeholder='이름...'/>
-        <input type='text' name='userPw' placeholder='아이디...'/>
-        <input type='text' name='userPws' placeholder='비밀번호...'/>
+        <div className="verBar"></div>
+        <p>회원가입</p>
+        <input className='nameInput' type='text' name='userId' placeholder='이름...'/>
+        <input className='idInput' type='text' name='userPw' placeholder='아이디...'/>
+        <input className='psInput' type='text' name='userPws' placeholder='비밀번호...'/>
         <button className='loginBtn'>회원가입</button>
       </div>
       <Nav></Nav>

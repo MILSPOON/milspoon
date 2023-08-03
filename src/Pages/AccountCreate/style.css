@@ -1,4 +1,4 @@
-.bottomCtn{
+.accountCreate{
   border-radius: 5% 5% 0 0;
   background-color: white;
   height: 43vh;
@@ -9,11 +9,11 @@
   align-items: center;
 }
 
-.loginWrap{
+.createWrap{
   background-color: #1D1D1D;
 }
 
-.idInput, .psInput {
+.idInput, .psInput, .nameInput {
   color: white;
   width: 50vw;
   background: #1D1D1D;
