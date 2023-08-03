@@ -60,11 +60,13 @@ const Account = () => {
 
   return (
       <div>
-        <MilHeader ></MilHeader>
+        <MilHeader></MilHeader>
         <MotionLogo text="떠 먹여주는 국방지식"></MotionLogo>
-        <input type='text' name='userId' value={user.userId} onChange={onChange}/>
-        <input type='text' name='userPw' value={user.userPw} onChange={onChange}/>
-        <button onClick={onClick}>로그인</button>
+        <div className='bottomCtn'>
+          <input type='text' name='userId' value={user.userId} onChange={onChange}/>
+          <input type='text' name='userPw' value={user.userPw} onChange={onChange}/>
+          <button onClick={onClick}>로그인</button>
+        </div>
         <Nav></Nav>
       </div>
   )
