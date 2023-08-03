@@ -32,7 +32,7 @@ function App () {
   useEffect(() => {
     if (isGameStart) {
       setTimeout(() => {
-        movePage('/quiz')
+        movePage('/quiz', { state: { currentEventName } })
       }, 3950)
     }
   }, [isGameStart])
