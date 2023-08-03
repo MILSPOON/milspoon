@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react'
 import './style.css'
 import TimeOverAnimation from '../../components/TimeOverAnimation'
+import { useLocation, useNavigate } from 'react-router-dom'
+
 function Quiz () {
   const [question, setQuestion] = useState('')
   const [realAnswer, setRealAnswer] = useState('')
@@ -14,6 +16,10 @@ function Quiz () {
   const [percentTime, setPercentTime] = useState(100)
 
   const [isTimeOver, setTimeOver] = useState(false)
+
+  const location = useLocation()
+  const movePage = useNavigate()
+  const currentMode = location.state.currentMode
 
   function useInterval (callback, delay) {
     const savedCallback = useRef() // 최근에 들어온 callback을 저장할 ref를 하나 만든다.
@@ -36,15 +42,30 @@ function Quiz () {
     if (time >= 0) {
       setTime(time - 0.1)
       setPercentTime(time / maxTime * 100)
-      console.log(time)
-      console.log(percentTime)
     } else {
       setPercentTime(0)
       setTimeOver(true)
     }
   }, 100)
+  useEffect(() => {
+    if (isTimeOver) {
+      const timeoutId = setTimeout(() => {
+        movePage('/quiz/result', {
+          state: {
+            currentMode,
+            score
+          }
+        })
+      }, 2000)
+
+      return () => {
+        clearTimeout(timeoutId)
+      }
+    }
+  }, [isTimeOver])
   async function api () {
     if (isNext) return
+    console.log(currentMode)
     const apiUrl = 'https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=1&perPage=2000&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D'
     await fetch(apiUrl)
       .then(res => res.json())
@@ -85,7 +106,7 @@ function Quiz () {
   }, [score])
   return (
     <div className='quizSite'>
-      { isTimeOver && <TimeOverAnimation/>}
+      { isTimeOver && (<TimeOverAnimation/>)}
       <div className='container'>
         <div className="questionContent">
           <div className="info">
