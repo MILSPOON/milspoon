@@ -58,7 +58,7 @@ function Wleh () {
         customOverlay1.setMap(map)
 
         // 두 번째 마커의 CustomOverlay를 사용하여 텍스트 표시
-        const content2 = '<div style="padding: 5px; background-color: white; border: 1px solid #ccc;">현재 위치</div>'
+        const content2 = '<div style="padding: 5px; background-color: white; border: 1px solid #ccc;">현재 위치dla</div>'
         const customOverlay2 = new kakao.maps.CustomOverlay({
           content: content2,
           position: markerPosition2,
