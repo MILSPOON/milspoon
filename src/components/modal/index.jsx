@@ -1,5 +1,5 @@
 import './style.css'
-
+// d
 function modal (props) {
   function btnClick (e) {
     if (e.target.textContent === '확인') {
