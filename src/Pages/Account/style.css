@@ -1,39 +1,38 @@
 .bottomCtn{
-    border-radius: 5% 5% 0 0;
-    background-color: white;
-    height: 43vh;
+  border-radius: 5% 5% 0 0;
+  background-color: white;
+  height: 43vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .loginWrap{
-    background-color: #1D1D1D;
+  background-color: #1D1D1D;
 }
 
 .idInput, .psInput {
-    color: white;
-    width: 50vw;
-    background: #1D1D1D;
-    height: 5vh;
-    margin-bottom: 1vh;
-    padding: 0px 2vw;
+  color: white;
+  width: 50vw;
+  background: #1D1D1D;
+  height: 5vh;
+  margin-bottom: 1vh;
+  padding: 0px 2vw;
 }
 
 .idInput::placeholder , .psInput::placeholder{
-    padding: 1vh;
+  padding: 1vh;
 }
 
 .loginBtn{
-    width: 50vw;
-    background: #D0FF00;
-    height: 5vh;
-    margin-bottom: 1vh;
-    font-weight: 700;
+  width: 50vw;
+  background: #D0FF00;
+  height: 5vh;
+  margin-bottom: 1vh;
+  font-weight: 700;
 }
-
 .verBar{
     width: 20vw;
     height: 1vh;
