@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+Nav{
+  z-index: 9999999;
+}
 .App{
-  background-color: rgba(171,255,79,1);
+  background-color: rgb(79, 79, 79);
   /* background: rgb(23,171,0);
   background: linear-gradient(90deg, rgba(23,171,0,1) 0%, rgba(171,255,79,1) 53%, rgba(158,255,163,1) 100%); */
   width: 100vw;
@@ -13,6 +16,14 @@
   width: 100vw;
   height: 40vh;
 } */
+.grayWrap{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+
 .content{
   width: 100vw;
   height: 86vh;
@@ -22,9 +33,59 @@
 
 .rankingContent{
   width: 100vw;
-  height: 50%;
+  height: 60%;
+  
 }
 
+.rankingContext{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  z-index: 300;
+  color: white;
+}
+.rankingContext h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hr{width: 100%; border-bottom: 2px solid white;padding: 5px;}
+
+.ranking{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  gap: 7.5px;
+  padding: 0 10px;
+}
+
+.ranking li>*{
+  width: 50%;
+}
+.ranking li{
+  width: 100%;
+  display: flex;
+}
+
+.point{
+  text-align: right;
+}
+.ranking li div{
+  display: flex;
+  gap: 10px;
+  width: 50%;
+  font-size: 1.5rem;
+}
+.ranking h3{
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+}
 .mainContent{
   background-color: white;
   border-radius: 5% 5% 0 0;
@@ -33,7 +94,9 @@
   flex-direction: column;
   gap: 3%;
   width: 100vw;
-  height: 50%;
+  height: 40%;
+  position: relative;
+  z-index: 500;
 }
 
 .mainContent>div{
@@ -62,4 +125,12 @@
 }
 .quiz>h1{
   padding: 10px 14px;
+}
+
+.trophy{
+  position: absolute;
+  bottom: 50%;
+  top: 50%;
+  transform: translate(-30%, -50%) rotateZ(15deg);
+  width: 100%;
 }

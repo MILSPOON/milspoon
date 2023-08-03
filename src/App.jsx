@@ -6,15 +6,9 @@ import { useState, useEffect } from 'react'
 import Modal from './components/Modal'
 import { useNavigate } from 'react-router-dom'
 import CountDown from './components/CountDown'
+import Trophy from './media/trophy-dynamic-premium.png'
 
 function App () {
-  const apiUrl = 'https://api.odcloud.kr/api/15089127/v1/uddi:858d65b9-ce3c-4a68-94b2-989ac92385c9?page=1&perPage=2000&serviceKey=BP1Ko40djjq%2FdGO47n5u7rYb2mIGEFcqZte4zYQihF59HR99CJxkSuEEwTXhErxIX1apz0eudJwcp9HowwFSSA%3D%3D'
-
-  fetch(apiUrl)
-    .then(res => res.json())
-    .then(myJson => {
-      console.log(myJson)
-    })
   const movePage = useNavigate()
 
   const [currentEventName, setCurrentEventName] = useState('미지정')
@@ -32,7 +26,7 @@ function App () {
   useEffect(() => {
     if (isGameStart) {
       setTimeout(() => {
-        movePage('/quiz', { state: { currentEventName } })
+        movePage('/quiz', { state: { currentMode: currentEventName } })
       }, 3950)
     }
   }, [isGameStart])
@@ -40,11 +34,95 @@ function App () {
   return (
     <div className="App">
       { isGameStart && <CountDown/> }
+      <div className="grayWrap"></div>
       <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
       <div className="content">
         <div className="rankingContent">
-          ranking
+          <img src={Trophy} className='trophy'/>
+          <div className="rankingContext">
+            <h2>순위 🏆️</h2>
+            <div className="hr"></div>
+            <ul className='ranking'>
+              <li>
+                <div className="left">
+                  <h3>1</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>2</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>3</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>4</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>5</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>6</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>7</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>8</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>9</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>10</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+              <li>
+                <div className="left">
+                  <h3>11</h3>
+                  <div className='player'>홍길동</div>
+                </div>
+                  <p className="point">0pt</p>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="mainContent">
           <div className="todayQuiz" onClick={clickMode}>
