@@ -5,7 +5,6 @@ import MilHeader from './components/MilHeader'
 import { useState, useEffect } from 'react'
 import Modal from './components/Modal'
 import { useNavigate } from 'react-router-dom'
-import chartIcon from './media/3dChartIcon.png'
 import CountDown from './components/CountDown'
 
 function App () {
@@ -43,9 +42,6 @@ function App () {
       { isGameStart && <CountDown/> }
       <MilHeader></MilHeader>
       <Modal modeName={currentEventName} setModeName={setCurrentEventName} setGameStart={setGameStart}></Modal>
-      <div className='infoBox'>
-        <img src={chartIcon} width='150' className='chart'/>
-      </div>
       <div className="content">
         <div className="mainContent">
           <div className="todayQuiz" onClick={clickMode}>
