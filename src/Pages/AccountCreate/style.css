@@ -22,7 +22,7 @@
   padding: 0px 2vw;
 }
 
-.idInput::placeholder , .psInput::placeholder{
+.idInput::placeholder , .psInput::placeholder, .nameInput::placeholder{
   padding: 1vh;
 }
 
