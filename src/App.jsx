@@ -62,56 +62,56 @@ function App () {
               <li>
                 <div className="left">
                   <h3>3</h3>
-                  <div className='player'>김철수1</div>
+                  <div className='player'>철수1</div>
                 </div>
                   <p className="point">1000pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>4</h3>
-                  <div className='player'>김철수2</div>
+                  <div className='player'>철수2</div>
                 </div>
                   <p className="point">900pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>5</h3>
-                  <div className='player'>김철수3</div>
+                  <div className='player'>철수3</div>
                 </div>
                   <p className="point">800pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>6</h3>
-                  <div className='player'>김철수4</div>
+                  <div className='player'>철수4</div>
                 </div>
                   <p className="point">700pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>7</h3>
-                  <div className='player'>김철수5</div>
+                  <div className='player'>철수5</div>
                 </div>
                   <p className="point">600pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>8</h3>
-                  <div className='player'>김철수6</div>
+                  <div className='player'>철수6</div>
                 </div>
                   <p className="point">500pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>9</h3>
-                  <div className='player'>김철수7</div>
+                  <div className='player'>철수7</div>
                 </div>
                   <p className="point">400pt</p>
               </li>
               <li>
                 <div className="left">
                   <h3>10</h3>
-                  <div className='player'>김철수8</div>
+                  <div className='player'>철수8</div>
                 </div>
                   <p className="point">300pt</p>
               </li>
