@@ -4,7 +4,7 @@ import Nav from '../../components/Nav'
 import MilHeader from '../../components/MilHeader'
 // import SAMPLE_LIST from '../../data/sampleDictionary.json'
 import { Fragment, useCallback, useEffect, useState } from 'react'
-
+import Loading from '../../media/loading.png'
 // const obj = {
 
 // }
@@ -61,8 +61,6 @@ function Dictionary () {
     }
     setRList([...tempList])
     setfullList([...tempList])
-    console.log(rememberList)
-    console.log(fullList)
   }, [])
 
   const changeWord = e => {
@@ -126,7 +124,7 @@ function Dictionary () {
                 c={item.출처}
                 c1={item.출처1}
               />
-              )) || <h1>로딩 중</h1>}
+              )) || <img src={Loading} className={styles.loadingPage}></img>}
           {word === '' && list && list.length < totalCount && (
             <button className={styles.loadButton} onClick={() => {
               loadMorePage(list.length / 100 + 1)
