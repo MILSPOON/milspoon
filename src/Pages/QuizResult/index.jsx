@@ -20,7 +20,7 @@ function QuizResult () {
         <h1>{currentMode}</h1>
         <div>
           <h2>최고 점수</h2>
-          <p>99999999</p>
+          <p>로그인 필요</p>
         </div>
         <div>
           <h2>현재 점수</h2>
