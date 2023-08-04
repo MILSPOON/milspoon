@@ -78,7 +78,7 @@
     margin: auto;
     text-align: center;
     margin-top: 250px;
-    animation: 1s infinite alternate;
+    animation: 0.3s infinite alternate;
     animation-name: adhs;
 }
 
