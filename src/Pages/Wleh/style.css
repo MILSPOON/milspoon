@@ -21,5 +21,6 @@
   }
 
   .di .bold{
+    word-break: break-all;
     font-weight: bold;
   }
