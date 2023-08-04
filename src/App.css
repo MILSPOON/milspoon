@@ -101,7 +101,6 @@ Nav{
 
 .mainContent>div{
   width: 100%;
-  background-color: #333333;
   border-radius: 50px;
   padding: 2%;
 }
@@ -128,11 +127,11 @@ Nav{
 }
 .todayQuiz{
   height: 40%;
-  background-color: #1D1D1D;
+  background-color: #D0FF00;
 }
 .todayQuiz>h1{
   padding: 10px 14px;
-  color: white;
+  color: black;
 }
 .quiz{
   height: 60%;
