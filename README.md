@@ -1,4 +1,4 @@
-# 밀스푼 : 국방 에듀케이션 어플리케이션
+# 밀스푼 : 떠 먹여 주는 국방 지식 에듀케이션 어플리케이션
 
 <img src="https://raw.githubusercontent.com/MILSPOON/milspoon-front/d73a5e5a15be287cc2450c70912a30a29192f2fa/src/media/MIL_LOGO_PNG.png" width="200" height="200">
 
