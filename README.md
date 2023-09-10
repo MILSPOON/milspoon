@@ -1,5 +1,7 @@
 # 밀스푼 : 국방 에듀케이션 어플리케이션
 
+![MIL Logo](https://raw.githubusercontent.com/MILSPOON/milspoon-front/d73a5e5a15be287cc2450c70912a30a29192f2fa/src/media/MIL_LOGO_PNG.png)
+
 **2023년 서울디지텍고등학교 국방 공간정보해커톤 대상**
 
 신병 혹은 입영대기자를 대상으로 국방 단어 퀴즈, 국방 단어사전, AI 포병 수신호 교육,방공호 위치 확인 기능을 탑재한 국방 관련 지식 교육 어플리케이션입니다.
