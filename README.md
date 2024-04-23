@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# 밀스푼 : 떠 먹여 주는 국방 지식 에듀케이션 어플리케이션
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://raw.githubusercontent.com/MILSPOON/milspoon-front/d73a5e5a15be287cc2450c70912a30a29192f2fa/src/media/MIL_LOGO_PNG.png" width="200" height="200">
 
-## Available Scripts
 
-In the project directory, you can run:
+**2023년 서울디지텍고등학교 국방 공간정보해커톤 대상**
 
-### `npm start`
+신병 혹은 입영대기자를 대상으로 국방 단어 퀴즈, 국방 단어사전, AI 포병 수신호 교육,방공호 위치 확인 기능을 탑재한 국방 관련 지식 교육 어플리케이션입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## [프로젝트 최종발표 프레젠테이션 PPT](https://github.com/MILSPOON/milspoon-front/blob/main/%EB%B0%9C%ED%91%9C.pdf)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| 이름                                  | 역할                                         |
+|---------------------------------------|----------------------------------------------|
+| [권기범](https://github.com/gwongibeom) | 조장, 포병 수신호 교육 기획, 포병 수신호 프론트엔드 개발, 총괄 디자인   |
+| [황진하](https://github.com/ghkdwlsgk) | 근처 방공호 페이지 프론트엔드 개발, 퀴즈 랭킹 백엔드 개발              |
+| [이재원](https://github.com/MaTemPong)  | 국방 단어 퀴즈 기획, 국방 단어 퀴즈 프론트엔드 개발                    |
+| [이선우](https://github.com/sw347)     | 국방 단어 사전 프론트엔드 개발                                       |
+| [정다운](https://github.com/Asion07)| 리소스 디자인                                 |
 
-### `npm test`
+## 프로젝트 실행 방법
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. 이 프로젝트는 [Create React App](https://github.com/facebook/create-react-app)을 사용하여 생성되었습니다.
 
-### `npm run build`
+2. 프로젝트 디렉토리에서 다음 명령어를 사용하여 앱을 실행할 수 있습니다:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+이 명령을 실행하면 개발 모드로 앱이 실행되며, 브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어볼 수 있습니다. 파일을 수정하면 페이지가 자동으로 새로고침되며, 콘솔에서 린트 오류를 확인할 수도 있습니다.
