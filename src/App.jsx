@@ -13,7 +13,7 @@ function App () {
   useEffect(() => {
     if (window.innerWidth >= 600) {
       alert(
-        'pc 접속 시 레거시 CSS 인해 ui가 깨질 수 있습니다.\nCSS 개선 작업중이니 크롬 개발자 도구나 모바일에서 접속를 권장합니다.'
+        'pc 접속 시 레거시 CSS 인해 ui가 깨질 수 있습니다.\nCSS 개선 작업중이니 크롬 개발자 도구나 모바일에서 접속을 권장합니다.'
       )
     }
   })
