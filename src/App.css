@@ -2,21 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
-Nav{
+@media (min-width: 500px) {
+  .rankingContent {
+    opacity: 0;
+  }
+
+  .rankingContext {
+    display: none;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1559736220-66fc1882555d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+}
+
+Nav {
   z-index: 9999999;
 }
-.App{
+.App {
   background-color: rgb(79, 79, 79);
   /* background: rgb(23,171,0);
   background: linear-gradient(90deg, rgba(23,171,0,1) 0%, rgba(171,255,79,1) 53%, rgba(158,255,163,1) 100%); */
   width: 100vw;
   height: 100vh;
+
+  max-width: 400px;
+}
+
+.App > * {
+  max-width: 400px;
 }
 /* .infoBox{
   width: 100vw;
   height: 40vh;
 } */
-.grayWrap{
+.grayWrap {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -24,20 +47,23 @@ Nav{
   z-index: 100;
 }
 
-.content{
+.content {
   width: 100vw;
   height: 86vh;
   /* 60 => 53 */
   /* z-index: 1000; */
 }
 
-.rankingContent{
-  width: 100vw;
-  height: 60%;
-  
+.content > * {
+  max-width: 400px;
 }
 
-.rankingContext{
+.rankingContent {
+  width: 100vw;
+  height: 60%;
+}
+
+.rankingContext {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,13 +73,19 @@ Nav{
   z-index: 300;
   color: white;
 }
-.rankingContext h2{
+
+.rankingContext h2 {
   font-size: 2rem;
   font-weight: 700;
 }
-.hr{width: 100%; border-bottom: 2px solid white;padding: 5px;}
 
-.ranking{
+.hr {
+  width: 100%;
+  border-bottom: 2px solid white;
+  padding: 5px;
+}
+
+.ranking {
   width: 100%;
   height: 50%;
   display: flex;
@@ -64,29 +96,29 @@ Nav{
   padding: 0 10px;
 }
 
-.ranking li>*{
+.ranking li > * {
   width: 50%;
 }
-.ranking li{
+.ranking li {
   width: 100%;
   display: flex;
 }
 
-.point{
+.point {
   text-align: right;
 }
-.ranking li div{
+.ranking li div {
   display: flex;
   gap: 10px;
   width: 50%;
   font-size: 1.5rem;
 }
-.ranking h3{
+.ranking h3 {
   font-weight: bold;
   text-align: center;
   width: 20%;
 }
-.mainContent{
+.mainContent {
   background-color: white;
   border-radius: 5% 5% 0 0;
   padding: 8% 2.5%;
@@ -99,53 +131,55 @@ Nav{
   z-index: 500;
 }
 
-.mainContent>div{
+.mainContent > div {
   width: 100%;
   border-radius: 50px;
   padding: 2%;
 }
 
-.mainContent>div:hover{
+.mainContent > div:hover {
   filter: brightness(70%);
 }
-.todayQuiz, .quiz{
+.todayQuiz,
+.quiz {
   overflow: hidden;
 }
-.mainContent>div>img{
+.mainContent > div > img {
   position: relative;
   width: 50%;
 }
-.todayQuiz>img{
+.todayQuiz > img {
   top: -150%;
   left: 55%;
   transform: rotateZ(-15deg);
 }
-.quiz>img{
+.quiz > img {
   top: -75%;
   left: 55%;
   transform: rotateZ(-30deg);
 }
-.todayQuiz{
+.todayQuiz {
   height: 40%;
-  background-color: #D0FF00;
+  background-color: #d0ff00;
 }
-.todayQuiz>h1{
+.todayQuiz > h1 {
   padding: 10px 14px;
   color: black;
 }
-.quiz{
+.quiz {
   height: 60%;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
 }
-.quiz>h1{
+.quiz > h1 {
   padding: 10px 14px;
   color: white;
 }
 
-.trophy{
+.trophy {
   position: absolute;
   bottom: 50%;
   top: 50%;
   transform: translate(-30%, -50%) rotateZ(15deg);
   width: 100%;
+  max-width: 300px;
 }
